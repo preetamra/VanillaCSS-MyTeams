@@ -1,0 +1,126 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin: 100px 250px 0;
+}
+
+.header>div:first-child {
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.045em;
+margin-top: -10px;
+color: #000000;
+
+}
+
+.header>div:first-child+div {
+    width: 50%;
+    text-align: left;
+}
+
+.header>div:first-child+div>div:first-child{
+    display: inline-block;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+text-transform: uppercase;
+margin-bottom: 10px;
+color: #000000;
+}
+
+.header>div:first-child+div>div:first-child+div {
+    width: 80%;
+    display: inline-block;
+    font-family: 'Poppins';
+    text-align: left;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+
+color: #000000;
+
+}
+
+.image img{
+    height: auto;
+    max-width: 230px;
+    min-width: 138px;
+}
+
+.image{
+    display: flex;
+    flex-direction: row;
+}
+
+.des{
+    writing-mode: vertical-rl;
+    font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 10px 10rem;
+}
+
+.item:nth-child(3n+2) .space {
+    height: 150px;
+}
+
+.name{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+@media (max-width: 40rem) {
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        margin: 70px 0 35px;
+        margin-left: 5px;
+    }
+    .header>div:first-child{
+        padding-bottom: 35px;
+        font-size: 36px;
+line-height: 48px;
+letter-spacing: -0.045em;
+    }
+    
+    .item:nth-child(even) .space {
+        height: 150px;
+    }
+}
